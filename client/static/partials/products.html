@@ -1,0 +1,22 @@
+<div ng-controller="productController">
+
+  <div id="newProduct">
+    <input type="text" ng-model="filter_name" placeholder="search products">
+    <h3>Add a new product</h3>
+      <p>Name:</p> <input type="text" ng-model="newProd.name" placeholder="name">
+      <p>Image(url):</p> <input type="url" ng-model="newProd.image" placeholder="http://">
+      <p>Description:</p> <input type="text" ng-model="newProd.desc">
+      <p>Initial Qty:</p>
+      <select ng-model="newProd.qty">
+        <option ng-repeat="q in qtys" ng-bind="q"  value={{q}}></option>
+      </select>
+      <input type="submit" ng-click="addProd()" value="Create Product">
+  </div>
+  <div id="displayedProds">
+    <div ng-repeat="prod in products | filter: filter_name" id="prod">
+      <img ng-src="{{prod.image}}" id="prodImg">
+      <p ng-bind="prod.name" id="prodPs"></p>
+      <p ng-bind="prod.qty" id="prodPs"></p>
+    </div>
+  </div>
+</div>

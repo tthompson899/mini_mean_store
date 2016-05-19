@@ -1,0 +1,13 @@
+<div ng-controller="dashboardController">
+
+  <div ng-repeat="product in products" id="dashboardProds">
+    <img ng-src="{{ product.image }}" />
+    <p>{{ product.name}}</p>
+    <p ng-bind="{{ product.qty}}"></p>
+  </div>
+
+  <h2>Recent Orders</h2>
+  <p ng-repeat="order in orders">{{ order.customer_name }} purchased {{ order.quantity }} ... {{ order.date | date: 'MMM dd, yyyy'}}</p>
+  <h2>New Customers</h2>
+  <p ng-repeat="customer in customers"> {{ customer.name }} joined the store. {{ customer.date | date: 'MMM dd, yyyy'}}</p>
+</div>
