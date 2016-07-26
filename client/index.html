@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Mini Mean Store</title>
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
     <script src="/js/model/customerFactory.js"></script>
@@ -16,9 +17,9 @@
     <script src="/js/config/client_routes.js"></script>
   </head>
   <body>
-      <div>
-        <a href="#/dashboard">Dashboard</a> | <a href="#/products">Products</a> | <a href="#/orders">Orders</a>|
-        <a href="#/customers">Customers</a>
+      <div id="home_btns">
+        <button><a href="#/dashboard">Dashboard</a></button> <button><a href="#/products">Products</a></button> <button><a href="#/orders">Orders</a></button>
+        <button><a href="#/customers">Customers</a></button>
       </div>
       <div ng-view="">
 

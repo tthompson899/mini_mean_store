@@ -36,6 +36,8 @@ module.exports = {
         updateCustomer.qty = updateCustomer.qty - req.body.qty;
         if(updateCustomer.qty < 1){
           updateCustomer.qty = 0;
+          var low = "Qty LOW!"
+            res.json(low)
         }
         updateCustomer.save();
       }

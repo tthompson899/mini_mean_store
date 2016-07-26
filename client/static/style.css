@@ -1,37 +1,80 @@
-p {
-  color: green;
-}
-#newProduct{
-  height: 400px;
-  width: 250px;
-  display: inline-block;
-  border: 2px solid green;
-}
-#displayedProds{
-  display: inline-block;
-  width: 700px;
-  height: 700px;
-  border: 2px solid black;
-  position: absolute;
-}
-
-#prod,#prodImg, #prodPs {
-  display: inline-block;
-
-}
-  #prodImg{
-    margin: 7px;
+  p {
+    margin: 0 0 30px;
+    color: green;
   }
-
-  #prodPs{
-    display: block;
-    margin-top: 1px;
-    /*margin-left: 55px;*/
-    margin-bottom: 1px;
-    position: relative;
+  #home_btns button a{
+    color: black;
+  }
+    #home_btns{
+      margin: 2px;
+      text-align: center;
+    }
+  #newProduct{
+    height: 400px;
+    width: 250px;
+    display: inline-block;
+    margin-left: 155px;
+    margin-top: 32px;
+  }
+  input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 
   }
+    #addStuff{
+      margin-left: 454px;
+    }
+    .choosingThings{
+      margin-left: 200px; 
+    }
 
-#dashboardProds{
-  display: inline-block;
-}
+  #displayedProds{
+    margin: 0 auto;
+    display: inline-block;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+  }
+    button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 4px;
+    background-color:  #9494b8;
+    color: #f2f2f2;
+    text-decoration: blink;
+  }
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    span button{
+      background-color: red;
+    }
+    #dashboard{
+      margin: 5px;
+    }
+
+  #prod,#prodImg, #prodPs {
+    display: inline-block;
+
+  }
+    #prodImg{
+      margin: 7px;
+    }
+
+    #prodPs{
+      display: block;
+      margin-top: 1px;
+      /*margin-left: 55px;*/
+      margin-bottom: 1px;
+      position: relative;
+
+    }
+
+  #dashboardProds{
+    display: inline-block;
+  }

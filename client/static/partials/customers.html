@@ -1,13 +1,12 @@
 <div ng-controller="customerController">
-  <p>
-    Add a new customer
-  </p><hr>
-  Customer Name: <input type="text" ng-model="newCustomer.cname">
-  <!-- <p>{{error}}</p> -->
-  <input type="submit" ng-click="addCustomer()" value="Add Customer">
+  <h1 id="addStuff">Add a new customer</h1>
+  <div class="choosingThings">
+    <p>Customer Name:</p> <input type="text" ng-model="newCustomer.cname">
 
-  <input type="text" ng-model="filter_name" placeholder="search name...">
+    <input type="submit" ng-click="addCustomer()" value="Add Customer">
 
+    <input type="text" ng-model="filter_name" placeholder="search name...">
+  </div>
   <table border="1">
     <tr>
       <th>Customer Name</th>
@@ -17,7 +16,7 @@
     <tr ng-repeat="customer in customers | filter: filter_name">
       <td ng-bind="customer.name"></td>
       <td ng-bind="customer.date | date: 'MMMM dd, yyyy'"></td>
-      <td><button ng-click="removeCustomer(customer._id)">Remove </button></td>
+      <td><span><button ng-click="removeCustomer(customer._id)">Remove </button></span></td>
     </tr>
   </table>
 </div>
