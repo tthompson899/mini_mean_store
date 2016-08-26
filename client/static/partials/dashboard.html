@@ -15,7 +15,7 @@
   </div>
 
   <h2>Recent Orders</h2>
-  <p ng-repeat="order in orders">{{ order.customer_name }} purchased {{ order.quantity }} ... {{ order.date | date: 'MMM dd, yyyy'}}</p>
+  <p class="recent_orders" ng-repeat="order in orders">{{ order.customer_name }} purchased {{ order.quantity }} ... {{ order.date | date: 'MMM dd, yyyy'}}</p>
   <h2>New Customers</h2>
-  <p ng-repeat="customer in customers"> {{ customer.name }} joined the store. {{ customer.date | date: 'MMM dd, yyyy'}}</p>
+  <p class="recent_custs" ng-repeat="customer in customers"> {{ customer.name }} joined the store. {{ customer.date | date: 'MMM dd, yyyy'}}</p>
 </div>

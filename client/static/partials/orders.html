@@ -1,6 +1,6 @@
 <div ng-controller="ordersController">
   <h1 id="addStuff">Add a new order</h1>
-  <div class="choosingThings">
+  <div class="orders">
     Customer:
     <select ng-model="new_order.name" ng-options="cust as cust for cust in customers_names  | filter: filter_name">
     </select>

@@ -23,10 +23,13 @@
 
   }
     #addStuff{
-      margin-left: 454px;
+      text-align: center;
     }
     .choosingThings{
-      margin-left: 400px; 
+      margin-left: 468px;
+    }
+    .orders{
+      margin-left: 423px;
     }
 
   #displayedProds{
@@ -55,7 +58,10 @@
       background-color: red;
     }
     #dashboard{
-      margin: 5px;
+      margin-left: 100px;
+    }
+    h2,.recent_orders, .recent_custs{
+      text-align: center;
     }
 
   #prod,#prodImg, #prodPs {
@@ -77,4 +83,5 @@
 
   #dashboardProds{
     display: inline-block;
+    text-align: center;
   }
