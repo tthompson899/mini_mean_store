@@ -15,8 +15,8 @@
   <div id="displayedProds">
     <div ng-repeat="prod in products | filter: filter_name" id="prod">
       <img ng-src="{{prod.image}}" id="prodImg">
-      <p ng-bind="prod.name" id="prodPs"></p>
-      <p ng-bind="prod.qty" id="prodPs"></p>
+      <p ng-bind="prod.name" id="prod_name"></p>
+      <p ng-bind="prod.qty" id="prod_qty"></p>
     </div>
   </div>
 </div>

@@ -64,7 +64,7 @@
       text-align: center;
     }
 
-  #prod,#prodImg, #prodPs {
+  #prod,#prodImg, #prod_name, #prod_qty{
     display: inline-block;
 
   }
@@ -72,7 +72,7 @@
       margin: 7px;
     }
 
-    #prodPs{
+    #prod_name, #prod_qty{
       display: block;
       margin-top: 1px;
       /*margin-left: 55px;*/
