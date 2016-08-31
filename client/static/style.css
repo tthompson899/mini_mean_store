@@ -70,6 +70,8 @@
   }
     #prodImg{
       margin: 7px;
+      width: 200px;
+      height: 200px; 
     }
 
     #prod_name, #prod_qty{
