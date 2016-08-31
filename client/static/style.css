@@ -63,6 +63,10 @@
     h2,.recent_orders, .recent_custs{
       text-align: center;
     }
+    #dashboard img{
+      width: 200px;
+      height: 200px; 
+    }
 
   #prod,#prodImg, #prod_name, #prod_qty{
     display: inline-block;
@@ -71,7 +75,7 @@
     #prodImg{
       margin: 7px;
       width: 200px;
-      height: 200px; 
+      height: 200px;
     }
 
     #prod_name, #prod_qty{
