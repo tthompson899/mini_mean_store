@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 
 var app = express();
-var port = process.env.PORT || 21091; // added port for Heroku to listen on
+var port = process.env.PORT || 23331; // added port for Heroku to listen on
 
 app.use(bodyParser.json());
 
@@ -13,5 +13,5 @@ require("./server/config/routes.js")(app);
 
 
 app.listen(port, function(){
-  console.log("Listening on server 8080...");
+  console.log("Listening on server 23331...");
 })
